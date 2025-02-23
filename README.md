@@ -33,11 +33,11 @@ This project leverages AI, ML, and automation to optimize project execution in l
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/construction-management.git
+   git clone https://github.com/keshav6740/ConstructAi.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd construction-management
+   cd ConstructionAI
    ```
 3. Create a virtual environment:
    ```sh
@@ -59,9 +59,5 @@ This project leverages AI, ML, and automation to optimize project execution in l
 - `` → Retrieve all projects
 - `` → Generate AI-based project predictions
 - `` → Update actual delay and cost overrun
-
-## 📜 License
-
-This project is licensed under the MIT License. Feel free to use and modify it.
 
 🚀 **Contribute & Star ⭐ the repo if you find it useful!**
