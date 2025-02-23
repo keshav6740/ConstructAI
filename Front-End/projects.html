@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Construction - Projects</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            height: 127vh;
+            background-color: #2c3e50;
+            color: white;
+            padding-top: 20px;
+        }
+        .sidebar .nav-link {
+            color: #ecf0f1;
+            margin: 5px 0;
+        }
+        .sidebar .nav-link:hover {
+            background-color: #34495e;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .project-card {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+        }
+        .progress {
+            height: 10px;
+        }
+        .team-member-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #666;
+        }
+        .milestone-item {
+            border-left: 3px solid #3498db;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .milestone-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: #3498db;
+        }
+        .project-select {
+            background-color: #f8f9fa;
+            border: 2px solid #e9ecef;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <h4 class="text-center mb-4">Construct AI</h4>
+                <nav class="nav flex-column">
+                    <a class="nav-link active" href="main.html"><i class="fas fa-home me-2"></i>Dashboard</a>
+                    <a class="nav-link" href="projects.html"><i class="fas fa-project-diagram me-2"></i>Projects</a>
+                    <a class="nav-link" href="risk.html"><i class="fas fa-exclamation-triangle me-2"></i>Risk Analysis</a>
+                    <a class="nav-link" href="supply-chain.html"><i class="fas fa-truck me-2"></i>Supply Chain</a>
+                    <a class="nav-link" href="workforce.html"><i class="fas fa-users me-2"></i>Workforce</a>
+                    <a class="nav-link" href="automation.html"><i class="fas fa-robot me-2"></i>Automation</a>
+                    <a class="nav-link" href="monitoring.html"><i class="fas fa-chart-line me-2"></i>Monitoring</a>
+                    <a class="nav-link" href="cost-analysis.html"><i class="fas fa-dollar-sign me-2"></i>Cost Analysis</a>
+                </nav>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-10 p-4">
+                <!-- Project Selector -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2>Project Overview</h2>
+                    <select class="form-select project-select" style="width: 300px;">
+                        <option value="">Select Project</option>
+                        <option value="1" selected>Skyline Tower Construction</option>
+                        <option value="2">Harbor Bridge Renovation</option>
+                        <option value="3">Green Valley Complex</option>
+                    </select>
+                </div>
+
+                <!-- Project Overview Cards -->
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <div class="card project-card">
+                            <div class="card-body">
+                                <h6>Project Timeline</h6>
+                                <h3>18 months</h3>
+                                <small>6 months completed</small>
+                                <div class="progress mt-2">
+                                    <div class="progress-bar" style="width: 33%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card project-card">
+                            <div class="card-body">
+                                <h6>Budget Status</h6>
+                                <h3>$12.5M</h3>
+                                <small>$4.2M spent</small>
+                                <div class="progress mt-2">
+                                    <div class="progress-bar" style="width: 34%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card project-card">
+                            <div class="card-body">
+                                <h6>Team Size</h6>
+                                <h3>245</h3>
+                                <small>Active members</small>
+                                <div class="progress mt-2">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card project-card">
+                            <div class="card-body">
+                                <h6>Current Phase</h6>
+                                <h3>Phase 2</h3>
+                                <small>Foundation work</small>
+                                <div class="progress mt-2">
+                                    <div class="progress-bar" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team and Progress -->
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Key Team Members</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="team-member-avatar me-3">JD</div>
+                                    <div>
+                                        <h6 class="mb-0">John Doe</h6>
+                                        <small class="text-muted">Project Manager</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="team-member-avatar me-3">AS</div>
+                                    <div>
+                                        <h6 class="mb-0">Alice Smith</h6>
+                                        <small class="text-muted">Lead Engineer</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="team-member-avatar me-3">RJ</div>
+                                    <div>
+                                        <h6 class="mb-0">Robert Johnson</h6>
+                                        <small class="text-muted">Site Supervisor</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="team-member-avatar me-3">ML</div>
+                                    <div>
+                                        <h6 class="mb-0">Maria Lee</h6>
+                                        <small class="text-muted">Safety Officer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Current Progress</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="milestone-item mb-4">
+                                    <h6>Foundation Work</h6>
+                                    <p class="text-muted mb-2">Deep foundation and basement construction in progress</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" style="width: 75%">75%</div>
+                                    </div>
+                                </div>
+                                <div class="milestone-item mb-4">
+                                    <h6>Structural Framework</h6>
+                                    <p class="text-muted mb-2">Steel framework assembly starting next week</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" style="width: 20%">20%</div>
+                                    </div>
+                                </div>
+                                <div class="milestone-item">
+                                    <h6>MEP Systems</h6>
+                                    <p class="text-muted mb-2">Initial planning and procurement phase</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" style="width: 15%">15%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Issues and Updates -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Active Issues</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-warning mb-3">
+                                    <h6 class="mb-1"><i class="fas fa-exclamation-circle me-2"></i>Material Delay</h6>
+                                    <p class="mb-0 small">Steel delivery delayed by 3 days. Impact assessment in progress.</p>
+                                </div>
+                                <div class="alert alert-danger mb-3">
+                                    <h6 class="mb-1"><i class="fas fa-exclamation-triangle me-2"></i>Weather Risk</h6>
+                                    <p class="mb-0 small">Heavy rain forecast next week. Preventive measures being implemented.</p>
+                                </div>
+                                <div class="alert alert-info">
+                                    <h6 class="mb-1"><i class="fas fa-info-circle me-2"></i>Permit Update</h6>
+                                    <p class="mb-0 small">Additional permits required for night work. Application in process.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Recent Updates</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Update</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Feb 18</td>
+                                                <td>Foundation inspection completed</td>
+                                                <td><span class="badge bg-success">Approved</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Feb 17</td>
+                                                <td>Crane installation begun</td>
+                                                <td><span class="badge bg-info">In Progress</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Feb 16</td>
+                                                <td>Safety audit conducted</td>
+                                                <td><span class="badge bg-success">Completed</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

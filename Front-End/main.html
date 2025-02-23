@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Construction Management Platform</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            height: 100vh;
+            background-color: #2c3e50;
+            color: white;
+            padding-top: 20px;
+        }
+        .sidebar .nav-link {
+            color: #ecf0f1;
+            margin: 5px 0;
+        }
+        .sidebar .nav-link:hover {
+            background-color: #34495e;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+        }
+        .risk-high {
+            color: #e74c3c;
+        }
+        .risk-medium {
+            color: #f39c12;
+        }
+        .risk-low {
+            color: #27ae60;
+        }
+        .progress {
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-2 sidebar">
+                <h4 class="text-center mb-4">Construct AI</h4>
+                <nav class="nav flex-column">
+                    <a class="nav-link active" href="main.html"><i class="fas fa-home me-2"></i>Dashboard</a>
+                    <a class="nav-link" href="projects.html"><i class="fas fa-project-diagram me-2"></i>Projects</a>
+                    <a class="nav-link" href="risk.html"><i class="fas fa-exclamation-triangle me-2"></i>Risk Analysis</a>
+                    <a class="nav-link" href="supply-chain.html"><i class="fas fa-truck me-2"></i>Supply Chain</a>
+                    <a class="nav-link" href="workforce.html"><i class="fas fa-users me-2"></i>Workforce</a>
+                    <a class="nav-link" href="automation.html"><i class="fas fa-robot me-2"></i>Automation</a>
+                    <a class="nav-link" href="monitoring.html"><i class="fas fa-chart-line me-2"></i>Monitoring</a>
+                    <a class="nav-link" href="cost-analysis.html"><i class="fas fa-dollar-sign me-2"></i>Cost Analysis</a>
+                </nav>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-10 p-4">
+                <h2 class="mb-4"> Dashboard</h2>
+                
+                <!-- Stats Row -->
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <h6>Project Progress</h6>
+                                <h3>67%</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 67%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <h6>Budget Utilization</h6>
+                                <h3>$4.2M / $6M</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <h6>Resource Efficiency</h6>
+                                <h3>85%</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <h6>Active Workers</h6>
+                                <h3>127</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk Analysis & Supply Chain -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>AI Risk Analysis</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Weather Delay Risk</span>
+                                        <span class="risk-high">High</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Supply Chain Risk</span>
+                                        <span class="risk-medium">Medium</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Budget Overrun Risk</span>
+                                        <span class="risk-low">Low</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Supply Chain Status</h5>
+                            </div>
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Material</th>
+                                            <th>Status</th>
+                                            <th>Stock Level</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Concrete</td>
+                                            <td><span class="badge bg-success">Optimal</span></td>
+                                            <td>85%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Steel Beams</td>
+                                            <td><span class="badge bg-warning">Low Stock</span></td>
+                                            <td>25%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lumber</td>
+                                            <td><span class="badge bg-danger">Critical</span></td>
+                                            <td>10%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workforce & Equipment -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Workforce Distribution</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Zone</th>
+                                                <th>Workers</th>
+                                                <th>Equipment</th>
+                                                <th>Progress</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Zone A</td>
+                                                <td>45</td>
+                                                <td>12</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 75%">75%</div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge bg-success">On Track</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zone B</td>
+                                                <td>32</td>
+                                                <td>8</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 60%">60%</div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge bg-warning">Delayed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zone C</td>
+                                                <td>50</td>
+                                                <td>15</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 90%">90%</div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge bg-success">On Track</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>AI Recommendations</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-warning">
+                                    <i class="fas fa-exclamation-circle me-2"></i>
+                                    Predicted weather delay next week. Consider adjusting schedule.
+                                </div>
+                                <div class="alert alert-info">
+                                    <i class="fas fa-info-circle me-2"></i>
+                                    Optimal time to order steel beams: Next 48 hours
+                                </div>
+                                <div class="alert alert-success">
+                                    <i class="fas fa-check-circle me-2"></i>
+                                    Resource allocation optimized for Zone B
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

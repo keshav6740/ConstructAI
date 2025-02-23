@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Analysis - AI Construction Management</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Include the same sidebar styles as before */
+        .sidebar {
+            height: 105h;
+            background-color: #2c3e50;
+            color: white;
+            padding-top: 20px;
+        }
+        .sidebar .nav-link {
+            color: #ecf0f1;
+            margin: 5px 0;
+        }
+        .sidebar .nav-link:hover {
+            background-color: #34495e;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .risk-indicator {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .risk-high { background-color: #e74c3c; }
+        .risk-medium { background-color: #f39c12; }
+        .risk-low { background-color: #27ae60; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar (same as dashboard) -->
+            <div class="col-md-2 sidebar">
+                <h4 class="text-center mb-4">Construct AI</h4>
+                <nav class="nav flex-column">
+                    <a class="nav-link active" href="main.html"><i class="fas fa-home me-2"></i>Dashboard</a>
+                    <a class="nav-link" href="projects.html"><i class="fas fa-project-diagram me-2"></i>Projects</a>
+                    <a class="nav-link" href="risk.html"><i class="fas fa-exclamation-triangle me-2"></i>Risk Analysis</a>
+                    <a class="nav-link" href="supply-chain.html"><i class="fas fa-truck me-2"></i>Supply Chain</a>
+                    <a class="nav-link" href="workforce.html"><i class="fas fa-users me-2"></i>Workforce</a>
+                    <a class="nav-link" href="automation.html"><i class="fas fa-robot me-2"></i>Automation</a>
+                    <a class="nav-link" href="monitoring.html"><i class="fas fa-chart-line me-2"></i>Monitoring</a>
+                    <a class="nav-link" href="cost-analysis.html"><i class="fas fa-dollar-sign me-2"></i>Cost Analysis</a>
+                </nav>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-10 p-4">
+                <h2 class="mb-4">Risk Analysis</h2>
+
+                <!-- Risk Overview -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Current Risk Status</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <h6>Overall Project Risk Level</h6>
+                                    <div class="d-flex align-items-center">
+                                        <div class="risk-indicator risk-medium"></div>
+                                        <span class="h4 mb-0">Medium Risk</span>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Risk Category</th>
+                                                <th>Level</th>
+                                                <th>Trend</th>
+                                                <th>Impact</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Schedule Delay</td>
+                                                <td><span class="badge bg-danger">High</span></td>
+                                                <td><i class="fas fa-arrow-up text-danger"></i></td>
+                                                <td>Critical</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Budget Overrun</td>
+                                                <td><span class="badge bg-warning">Medium</span></td>
+                                                <td><i class="fas fa-arrow-right text-warning"></i></td>
+                                                <td>Moderate</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Quality Issues</td>
+                                                <td><span class="badge bg-success">Low</span></td>
+                                                <td><i class="fas fa-arrow-down text-success"></i></td>
+                                                <td>Minor</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>AI Risk Predictions</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-danger">
+                                    <strong>High Risk Alert:</strong> Potential weather-related delays next week
+                                </div>
+                                <div class="alert alert-warning">
+                                    <strong>Medium Risk:</strong> Supply chain disruption possible in 2 weeks
+                                </div>
+                                <div class="alert alert-info">
+                                    <strong>Monitoring:</strong> Labor availability for upcoming phases
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk Mitigation Plans -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>AI-Generated Risk Mitigation Strategies</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Risk Factor</th>
+                                                <th>Probability</th>
+                                                <th>Impact</th>
+                                                <th>Recommended Action</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Weather Delay</td>
+                                                <td>75%</td>
+                                                <td>High</td>
+                                                <td>
+                                                    <ul class="mb-0">
+                                                        <li>Accelerate current phase</li>
+                                                        <li>Prepare indoor work alternatives</li>
+                                                        <li>Review weather protection measures</li>
+                                                    </ul>
+                                                </td>
+                                                <td><span class="badge bg-warning">In Progress</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Material Shortage</td>
+                                                <td>45%</td>
+                                                <td>Medium</td>
+                                                <td>
+                                                    <ul class="mb-0">
+                                                        <li>Contact alternative suppliers</li>
+                                                        <li>Increase safety stock</li>
+                                                        <li>Review delivery schedules</li>
+                                                    </ul>
+                                                </td>
+                                                <td><span class="badge bg-success">Implemented</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Labor Shortage</td>
+                                                <td>30%</td>
+                                                <td>Medium</td>
+                                                <td>
+                                                    <ul class="mb-0">
+                                                        <li>Contact temp agencies</li>
+                                                        <li>Adjust work schedules</li>
+                                                        <li>Cross-train existing workers</li>
+                                                    </ul>
+                                                </td>
+                                                <td><span class="badge bg-primary">Planned</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
